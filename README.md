@@ -31,3 +31,7 @@ Pathfinder 2e already provides a way to distribute coins so the button is diable
 
 ## License
 MIT
+
+![Image1](https://raw.githubusercontent.com/Krista-R-P/images/refs/heads/main/pf2e-sell-loot%20img%201.png)
+![Image1](https://raw.githubusercontent.com/Krista-R-P/images/refs/heads/main/pf2e-sell-loot%20img%202.png)
+![Image1](https://raw.githubusercontent.com/Krista-R-P/images/refs/heads/main/pf2e-sell-loot%20img%203.png)
