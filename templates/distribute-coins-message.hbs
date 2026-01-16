@@ -1,0 +1,52 @@
+<div class="pf2e-distribute-coins">
+
+	<div class="coinage">
+
+		<div class="currency">
+			<ul>
+
+				<li class="denomination gp">
+					<div class="currency-image" data-tooltip="Gold"></div>
+					<span title="{{rawcoinShare.gp}}">{{coinShare.gp}}</span>
+				</li>
+
+				<li class="denomination sp">
+					<div class="currency-image" data-tooltip="Silver"></div>
+					<span title="{{rawcoinShare.sp}}">{{coinShare.sp}}</span>
+				</li>
+				
+				<li class="denomination cp">
+					<div class="currency-image" data-tooltip="Copper"></div>
+					<span title="{{rawcoinShare.cp}}">{{coinShare.cp}}</span>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="wealth">
+			<div class="item-name">
+				<i class="fa-solid fa-coins fa-fw"></i>
+				Total Currency
+				<span>{{totalDistributedGP}} gp</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="recipients-block pf2e-elegant-frame">
+	  <div class="recipients-block-inner">
+		<div class="recipients-header">
+			<span class="recipients-title">Distribution Details</span>
+			{{!-- <i class="fa-solid fa-users"></i> --}}
+		</div>
+		<div class="recipients-from"><b>From:</b> <span class="recipients-actor">@Actor[{{partyActor.id}}]</span></div>
+		<div class="recipients-to"><b>Distributed To:</b></div>
+		<ul class="recipient-list">
+		{{#each recipients}}
+			<li><span class="recipient-name">@Actor[{{id}}]</span></li>
+		{{/each}}
+		</ul>
+	  </div>
+	</div>
+
+</div>

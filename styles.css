@@ -1,0 +1,233 @@
+
+
+.pf2e-distribute-coins {
+	--text-color: rgb(247, 243, 232);
+	--beige: rgb(120, 100, 82);
+	--dark: rgb(48, 40, 49);
+	--red: rgb(120, 46, 34);
+}
+
+.pf2e-distribute-coins {
+	font-family: Gelasio, Georgia, serif;
+	color: rgb(48, 40, 49);
+	font-size: 13px;
+	user-select: none;
+}
+
+.pf2e-distribute-coins .recipients-block.pf2e-elegant-frame {
+       position: relative;
+       background:
+	       url("/systems/pf2e/assets/sheet/red_sidebar_top.webp") no-repeat left bottom 60px,
+	       url("/systems/pf2e/assets/sheet/red_sidebar_bottom.webp") no-repeat left bottom;
+       background-size:
+	       100% auto,
+	       100% auto;
+       /* Crop the top image by setting padding-bottom equal to the height you want cropped */
+       padding-bottom: 80px;
+       overflow: hidden;
+}
+
+.pf2e-distribute-coins .recipients-block-inner {
+	/* background: rgb(96, 88, 86); */
+	margin: 0 0 0 0;
+	padding: 16px 32px 10px 32px;
+	color: var(--dark);
+	border-radius: 0;
+	box-sizing: border-box;
+}
+
+.pf2e-distribute-coins .recipients-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+	justify-content: space-between;
+
+	border-bottom-color: rgb(233, 215, 161);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.pf2e-distribute-coins .recipients-header i {
+	margin-right: 8px;
+	font-size: 1.1em;
+	color: rgb(233, 215, 161);
+}
+.pf2e-distribute-coins .recipients-title {
+	font-weight: 600;
+	font-size: 1.25em;
+	color: rgb(233, 215, 161);
+	font-family: Roboto, sans-serif;
+	font-variant-caps: small-caps;
+	letter-spacing: 0.65px;
+}
+
+.pf2e-distribute-coins .recipients-from .content-link i::before {
+	content: "\f0c0";
+	padding-right: 0.5em;
+	font-size: 1.25em;
+}
+
+.pf2e-distribute-coins .recipients-from {
+	margin-bottom: 24px;
+}
+
+.pf2e-distribute-coins .recipients-from,
+.pf2e-distribute-coins .recipients-to {
+	font-size: 0.98em;
+}
+.pf2e-distribute-coins .recipients-actor {
+	font-weight: bold;
+}
+.pf2e-distribute-coins .recipient-list {
+	margin: 0 0 0 12px;
+	padding: 0;
+	list-style: none;
+}
+.pf2e-distribute-coins .recipient-list li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2px;
+	font-size: 0.97em;
+}
+.pf2e-distribute-coins .recipient-list i {
+	/* color: #e9d7a1; */
+	margin-right: 6px;
+	font-size: 1em;
+}
+
+.pf2e-distribute-coins .content-link {
+	border: none;
+	outline: none;
+}
+
+.pf2e-distribute-coins *, .pf2e-distribute-coins * {
+	background-color: transparent;
+	font-family: "Gelasio", Georgia, serif;
+	box-sizing: border-box;
+	color-scheme: light;
+	cursor: default;
+	line-height: normal;
+	position: relative;
+	scrollbar-color: var(--red) transparent;
+	scrollbar-width: thin;
+	text-rendering: optimizeSpeed;
+	unicode-bidi: isolate;
+	user-select: none;
+	list-style: none;
+	color: var(--text-color);
+}
+
+.pf2e-distribute-coins i, .pf2e-distribute-coins i {
+	font-family: "Font Awesome 6 Pro" !important;
+}
+
+.pf2e-distribute-coins .currency ul,
+.pf2e-distribute-coins .currency ul {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 100%;
+}
+
+.pf2e-distribute-coins .currency,
+.pf2e-distribute-coins .currency {
+	display: flex;
+	align-items: center;
+	background-color: rgb(96, 88, 86);
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.3) inset, 0 0 0 2px rgba(255,255,255,0.2) inset;
+	color: rgb(48, 40, 49);
+	height: 30px;
+	margin: 0;
+	padding: 3px;
+	list-style-type: none;
+	width: 100%;
+}
+
+.pf2e-distribute-coins .currency li,
+.pf2e-distribute-coins .currency li {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	text-shadow: 0 0 3px rgba(0,0,0,0.75);
+	list-style-type: none;
+}
+
+.pf2e-distribute-coins .currency li {
+	flex: 1 1 0;
+}
+.pf2e-distribute-coins .currency li {
+	flex: 0 1 1 1 0 0;
+}
+
+.pf2e-distribute-coins .currency-image,
+.pf2e-distribute-coins .currency-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 24px;
+	margin-right: 8px;
+	box-shadow: 0 0 0 1px #9f725b, 0 0 0 2px #e9d7a1, 0 0 0 3px #956d58;
+}
+
+.pf2e-distribute-coins .denomination.pp .currency-image {
+	background-image: url("/systems/pf2e/icons/equipment/treasure/currency/platinum-pieces.webp");
+}
+.pf2e-distribute-coins .denomination.gp .currency-image {
+	background-image: url("/systems/pf2e/icons/equipment/treasure/currency/gold-pieces.webp");
+}
+.pf2e-distribute-coins .denomination.sp .currency-image {
+	background-image: url("/systems/pf2e/icons/equipment/treasure/currency/silver-pieces.webp");
+}
+.pf2e-distribute-coins .denomination.cp .currency-image {
+	background-image: url("/systems/pf2e/icons/equipment/treasure/currency/copper-pieces.webp");
+}
+
+.pf2e-distribute-coins .wealth,
+.pf2e-distribute-coins .wealth *,
+.pf2e-distribute-coins .wealth,
+.pf2e-distribute-coins .wealth * {
+	font-family: Roboto, sans-serif;
+}
+
+.pf2e-distribute-coins .wealth {
+	align-items: center;
+	background-color: var(--beige);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 1px inset, rgba(255, 255, 255, 0.2) 0px 0px 0px 2px inset;
+	display: flex;
+	justify-content: space-between;
+	height: 24px;
+	/* margin-bottom: 8px; */
+	/* padding: 0px 4px 0px 4px; */
+	padding: 4px 8px;
+}
+
+.pf2e-distribute-coins .wealth .item-name-cell,
+.pf2e-distribute-coins .wealth .item-name-cell {
+	margin: 2px 2px 0px 4px;
+	text-shadow: rgba(0, 0, 0, 0.75) 0px 0px 2px;
+}
+
+.pf2e-distribute-coins .wealth .item-name span,
+.pf2e-distribute-coins .wealth .item-name span {
+	display: inline;
+	margin-left: 4px;
+	text-shadow: rgba(0, 0, 0, 0.75) 0px 0px 2px;
+}
+
+.pf2e-distribute-coins .wealth .item-name-cell,
+.pf2e-distribute-coins .wealth .item-name-cell {
+	margin: 2px 2px 0px 4px;
+	text-shadow: rgba(0, 0, 0, 0.75) 0px 0px 2px;
+}
+
+
+.pf2e-distribute-coins .wealth .item-name {
+	font-weight: bold;
+	text-shadow: rgba(0, 0, 0, 0.75) 0px 0px 2px;
+}
+
+.pf2e-distribute-coins .wealth .item-name span {
+	font-weight: normal;
+	text-shadow: rgba(0, 0, 0, 0.75) 0px 0px 2px;
+}

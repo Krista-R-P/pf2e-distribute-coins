@@ -1,0 +1,37 @@
+{
+  "id": "pf2e-distribute-coins",
+  "title": "PF2e Distribute Coins",
+  "description": "Module allowing players to distribute coins among party members in PF2e.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "esmodules": [
+    "hooks.js"
+  ],
+  "styles": [
+    "styles.css"
+  ],
+  "authors": [
+    {
+      "name": "Voluted",
+      "flags": {}
+    }
+  ],
+  "manifest": "https://github.com/Krista-R-P/pf2e-award-xp/releases/latest/download/module.json",
+  "download": "https://github.com/Krista-R-P/pf2e-award-xp/releases/latest/download/module.zip",
+  "url": "https://github.com/Krista-R-P/pf2e-award-xp",
+  "bugs": "https://github.com/Krista-R-P/pf2e-award-xp/issues",
+  "changelog": "https://github.com/Krista-R-P/pf2e-award-xp/blob/main/changelog",
+  "socket": true
+}
