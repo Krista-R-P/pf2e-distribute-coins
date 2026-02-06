@@ -5,10 +5,10 @@
 export async function distributeCoinsToParty(partyActorId) {
     const partyActor = game.actors.get(partyActorId);
     if (!partyActor) return;
-    // Select all player characters in the world (not tokens, not minions/eidolons)
-    const playerActors = game.actors.contents.filter(
-        a => a.hasPlayerOwner && a.type === "character" && !a.isToken && !a.system.traits.value.some((t) => ["minion", "eidolon"].includes(t))
-    );
+    // Select only the default character for each player
+    const playerActors = game.users.contents
+        .map(u => u.character)
+        .filter(a => a && a.type === "character" && !a.isToken && !a.system.traits.value.some((t) => ["minion", "eidolon"].includes(t)));
     if (!playerActors.length) {
         ui.notifications.warn("No player characters found to distribute coins.");
         return;
